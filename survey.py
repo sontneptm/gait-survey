@@ -19,6 +19,7 @@ class SurveyWindow(QMainWindow, form_class):
         self.setupUi(self)
         self.load_video_list()
         self.setup_buttons()
+        print()
         
         self.vid_thread = Thread(target=self.load_video, args=())
         self.vid_thread.start()
