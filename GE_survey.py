@@ -11,7 +11,7 @@ from threading import Thread
 import time
 from glob import glob
 
-form_class = uic.loadUiType("GAIT_EMOTION\gait_survey\survey_gui.ui")[0]
+form_class = uic.loadUiType("survey_gui.ui")[0]
 
 class SurveyWindow(QMainWindow, form_class):
     def __init__(self):
