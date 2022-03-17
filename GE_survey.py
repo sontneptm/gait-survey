@@ -24,7 +24,8 @@ class SurveyWindow(QMainWindow, form_class):
         self.vid_thread.start()
 
     def load_video_list(self):
-        self.vid_list = glob('GAIT_EMOTION/vid/*')
+        self.vid_list = glob('vid/이재영/*')
+        print(self.vid_list)
         self.vid_cursor = 0
         self.label_9.setText(str(self.vid_cursor+1) + '/' + str(len(self.vid_list)))
 
