@@ -42,9 +42,10 @@ class SurveyWindow(QMainWindow, form_class):
             if cap.isOpened():
 
                 ret, self.frame = cap.read()
-                vid_frame_rate = 60
+                vid_frame_rate = 120
 
                 self.show_image(self.frame)
+                print(1.0/vid_frame_rate)
                 time.sleep(1.0/vid_frame_rate)
 
     def show_image(self, img:np.ndarray):
